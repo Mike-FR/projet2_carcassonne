@@ -43,13 +43,13 @@ tr {
   z-index: 1;
   overflow: hidden;
   position: fixed;
-  background-image: url(../../assets/country.jpg);
+  background-image: url(/assets/country.jpg);
   background: cover;
 }
 .bandebas {
   z-index: 20;
   height: 40px;
-  background-image: url(../../assets/grass2.png);
+  background-image: url(/assets/grass2.png);
   background-repeat: repeat-x;
 }
 
