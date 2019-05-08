@@ -21,6 +21,7 @@ import { RulesComponent } from './rules/rules.component';
 import { HelpComponent } from './help/help.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 const appRoutes: Routes = [
 
   {

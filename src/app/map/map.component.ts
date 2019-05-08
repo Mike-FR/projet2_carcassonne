@@ -5,6 +5,7 @@ import { MapService } from '../map.service';
 import { PanZoomConfig, PanZoomAPI, PanZoomModel } from 'ng2-panzoom';
 import { tilesDeck } from '../tuilesData';
 
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -39,7 +40,6 @@ export class MapComponent implements OnInit {
   rotateTile() {
     this.game.rotationTile()
   }
-  
 }
 
 

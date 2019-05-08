@@ -1,4 +1,5 @@
 /* Style des boutons */
+
 .tilesleft {
   text-align: center;
   color: #374b9e;
@@ -7,6 +8,7 @@
   font-weight: bold;
   text-shadow: 1px 1px whitesmoke;
 }
+
 button {
   display: inline-block;
   padding: 15px 25px;
@@ -60,10 +62,12 @@ img {
 .pioche {
   width: 50%;
 }
+
 .picktile,
 .rotatetile {
   margin-bottom: 20px;
 }
+
 
 /* CSS pour la rotation de la tuile */
 

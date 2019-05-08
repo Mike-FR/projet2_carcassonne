@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 })
 export class GameService {
 
+  currentTileRotation = 0
   currentTile = undefined
   totalTile: number = tilesDeck.length
   currentRotation = 0
@@ -25,7 +26,7 @@ export class GameService {
     this.tileSound.src = "/assets/cardflop2.mp3"
     this.tileSound.load()
     this.tileSound.play()
-
+    
     this.flipIt()
 
     if (this.totalTile <= 0) {

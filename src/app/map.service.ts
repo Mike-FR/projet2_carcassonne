@@ -8,8 +8,7 @@ import { isNull, nullSafeIsEquivalent } from '@angular/compiler/src/output/outpu
 })
 export class MapService {
 
-  public cases: Tuile[][] = undefined
-
+  public cases : Tuile[][] = undefined
 
   constructor() { }
 
