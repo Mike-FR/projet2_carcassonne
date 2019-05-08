@@ -20,8 +20,8 @@ export class PiocheComponent implements OnInit {
   zoomIn:any
 
   constructor(public game: GameService,
-    private deck: DeckService,
-    private gameState: GameStateService) { }
+    public deck: DeckService,
+    public gameState: GameStateService) { }
 
   ngOnInit() {
     

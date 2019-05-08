@@ -26,7 +26,7 @@ export class MapComponent implements OnInit {
 
   tileSound: any;
 
-  constructor(private deck: DeckService, private game: GameService, private map: MapService) { }
+  constructor(public deck: DeckService, public game: GameService, public map: MapService) { }
 
   ngOnInit() {
     this.cases = this.map.generateMap()

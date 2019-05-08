@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   tileSound: any;
   zoomIn:any
   
-  constructor(public game: GameService, private deck: DeckService) { }
+  constructor(public game: GameService, public deck: DeckService) { }
 
   submitPlayer() {
     if (this.tableLength > 0) {

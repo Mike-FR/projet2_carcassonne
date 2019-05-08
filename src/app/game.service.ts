@@ -18,7 +18,7 @@ export class GameService {
   flipped = true
   public tileSound: any;
 
-  constructor(private deck: DeckService, private map: MapService) { }
+  constructor(public deck: DeckService, public map: MapService) { }
 
   pickedTile() {
     this.tileSound = new Audio()

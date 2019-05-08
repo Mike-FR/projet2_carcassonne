@@ -13,7 +13,7 @@ export class ModalComponent implements OnChanges {
   @Input()
   turnState:string;
 
-  constructor(config: NgbModalConfig, private modalService: NgbModal, private game: GameService,) {
+  constructor(config: NgbModalConfig, public modalService: NgbModal, public game: GameService,) {
     // customize default values of modals used by this component tree
     
     config.backdrop = 'static';
