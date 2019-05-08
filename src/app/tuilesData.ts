@@ -1,4 +1,3 @@
-
 export class Tuile {
 
   private static readonly SideKeys: string[] = ["top", "left", "bottom", "right"]
