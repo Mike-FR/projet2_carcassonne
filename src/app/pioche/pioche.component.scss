@@ -4,7 +4,7 @@
   text-align: center;
   color: #374b9e;
   font-size: 1.6em;
-  font-variant:small-caps;
+  font-variant: small-caps;
   font-weight: bold;
   text-shadow: 1px 1px whitesmoke;
 }
@@ -53,7 +53,6 @@ button:active {
   background-color: #b44d4d;
 }
 
-
 /* Taille de la tuile de la pioche */
 
 img {
@@ -73,59 +72,60 @@ img {
 /* CSS pour la rotation de la tuile */
 
 #container {
-    overflow: hidden;
-  }
-  
-  #image {
-    transform-origin: top left;
-    -ms-transform-origin: top left;
-  }
-  
-  .rotate90 {
-    transform: rotate(90deg) translateY(-100%);
-    -webkit-transform: rotate(90deg) translateY(-100%);
-    -ms-transform: rotate(90deg) translateY(-100%);
-  }
-  .rotate180 {
-    transform: rotate(180deg) translate(-100%, -100%);
-    -webkit-transform: rotate(180deg) translate(-100%, -100%);
-    -ms-transform: rotate(180deg) translateX(-100%, -100%);
-  }
-  .rotate270 {
-    transform: rotate(270deg) translateX(-100%);
-    -webkit-transform: rotate(270deg) translateX(-100%);
-    -ms-transform: rotate(270deg) translateX(-100%);
-  }
+  overflow: hidden;
+}
 
-  /* CSS pour le flip de la tuile */
+#image {
+  transform-origin: top left;
+  -ms-transform-origin: top left;
+}
 
-  .flip-box {
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-  }
-  
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    box-shadow:2px 2px 2px gray;
-    backface-visibility: hidden;
-  }
-  
-  .flip-box-back {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-box-inner.is-flipped {
-    transform: rotateY(180deg);
-  }
+.rotate90 {
+  transform: rotate(90deg) translateY(-100%);
+  -webkit-transform: rotate(90deg) translateY(-100%);
+  -ms-transform: rotate(90deg) translateY(-100%);
+}
+.rotate180 {
+  transform: rotate(180deg) translate(-100%, -100%);
+  -webkit-transform: rotate(180deg) translate(-100%, -100%);
+  -ms-transform: rotate(180deg) translateX(-100%, -100%);
+}
+.rotate270 {
+  transform: rotate(270deg) translateX(-100%);
+  -webkit-transform: rotate(270deg) translateX(-100%);
+  -ms-transform: rotate(270deg) translateX(-100%);
+}
+
+/* CSS pour le flip de la tuile */
+
+.flip-box {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px gray;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+
+.flip-box-inner.is-flipped {
+  transform: rotateY(180deg);
+}

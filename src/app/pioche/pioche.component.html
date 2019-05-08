@@ -1,7 +1,7 @@
 <div [@zoomIn]="zoomIn" class="text-center">
-<p class="tilesleft">{{game.totalTile}} tuiles restantes</p>
+  <p class="tilesleft">{{game.totalTile}} tuiles restantes</p>
   <button *ngIf="game.currentTile == undefined" class="picktile" (click)="game.pickedTile()">
-     Piochez !
+    Piochez !
   </button>
   <button *ngIf="game.currentTile" class="rotatetile" (click)="rotateTile()">Pivoter la tuile!</button>
   <div class="flip-box">
@@ -16,5 +16,4 @@
     </div>
   </div>
   <br>
-  
-  </div>
+</div>

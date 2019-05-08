@@ -10,14 +10,14 @@ export class AppComponent {
   title = 'Carcassonne-game';
 
 
-  constructor(private router: Router){}
+  constructor(private router: Router) { }
 
-  navigateToStart(){
+  navigateToStart() {
     this.router.navigate(['/game-start'])
   }
 
-    navigateToRules(){
-      this.router.navigate(['/rules'])
+  navigateToRules() {
+    this.router.navigate(['/rules'])
   }
- 
+
 }

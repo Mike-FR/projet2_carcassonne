@@ -19,28 +19,29 @@ export class HomeComponent implements OnInit {
   bounceInLeft: any
   tableLength = 5
   tileSound: any;
-  zoomIn:any
-  
+  zoomIn: any
+
   constructor(public game: GameService, public deck: DeckService) { }
 
   submitPlayer() {
     if (this.tableLength > 0) {
-    this.game.playersGame()
-    this.tableLength -= 1
-    this.tileSound = new Audio()
-    this.tileSound.src = "/assets/epeejoueur.mp3"
-    this.tileSound.load()
-    this.tileSound.play()
-    
-  }}
+      this.game.playersGame()
+      this.tableLength -= 1
+      this.tileSound = new Audio()
+      this.tileSound.src = "/assets/epeejoueur.mp3"
+      this.tileSound.load()
+      this.tileSound.play()
 
-  
-  ngOnInit() {
-    
-    this.game.getMusic()
-    
+    }
   }
-  
+
+
+  ngOnInit() {
+
+    this.game.getMusic()
+
+  }
+
 
   public readonly STATE_PICK_TILE = 'Piocher une carte'
   public readonly STATE_CLICK_TILE = 'Poser une carte'

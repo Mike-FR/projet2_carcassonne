@@ -21,5 +21,5 @@ export class DeckService {
     // console.log(keepNumTile)
     return keepNumTile
   }
-  
+
 }

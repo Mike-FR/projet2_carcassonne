@@ -24,7 +24,7 @@
 }
 
 .family:checked + label {
-  background-color: rgba(255, 255, 255, 0.6); 
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20%;
 }
 
@@ -34,8 +34,7 @@ label {
 
 .placesleft,
 .nomJoueur,
-.add-player
-{
+.add-player {
   font-size: 2rem;
 }
 
@@ -46,7 +45,7 @@ label {
 
 .placesleft,
 .add-player {
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
 
 @keyframes heartBeat {
@@ -123,8 +122,7 @@ div {
 .btn-dark.validate:hover {
   color: black;
 }
-// font-family: 'New Rocker', cursive;
-// font-family: 'Trade Winds', cursive;
+
 .egg {
   background-image: url(../../assets/home/homegif.gif);
   background-repeat: no-repeat;

@@ -18,8 +18,8 @@ export class MapComponent implements OnInit {
   public panZoomConfig: PanZoomConfig = new PanZoomConfig({
     zoomLevels: 4,
     scalePerZoomLevel: 1.5,
-    initialPanX : -10000,
-    initialPanY : -10500,
+    initialPanX: -10000,
+    initialPanY: -10500,
     freeMouseWheelFactor: 0.01,
     zoomToFitZoomLevelFactor: 0.98,
     dragMouseButton: 'right',
@@ -36,11 +36,10 @@ export class MapComponent implements OnInit {
     this.game.helpText()
   }
 
-  
+
   rotateTile() {
     this.game.rotationTile()
   }
-
 }
 
 
