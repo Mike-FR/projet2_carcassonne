@@ -1,8 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { GameService } from '../game.service';
 import { DeckService } from '../deck.service';
-import { GameStateService } from '../game-state.service'
-import { tilesDeck, Tuile } from '../tuilesData';
 import { trigger, transition, useAnimation } from '@angular/animations';
 import { zoomIn } from 'ng-animate';
 
@@ -17,21 +15,19 @@ import { zoomIn } from 'ng-animate';
 })
 export class PiocheComponent implements OnInit {
 
-  zoomIn:any
+  zoomIn: any
 
-  constructor(public game: GameService,
-    public deck: DeckService,
-    public gameState: GameStateService) { }
+  constructor(public game: GameService, public deck: DeckService) { }
 
   ngOnInit() {
-    
+
   }
 
   rotateTile() {
     this.game.rotationTile()
   }
 
-  
+
 
 
 }

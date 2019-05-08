@@ -8,7 +8,7 @@ import { DeckService } from './deck.service';
 import { PiocheComponent } from './pioche/pioche.component';
 import { MapService } from './map.service';
 import { MenuComponent } from './menu/menu.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './modal/modal.component';
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
@@ -27,33 +27,32 @@ const appRoutes: Routes = [
     path: '',
     component: HomeComponent
   },
- {
+  {
     path: 'game-start',
     component: GameStartComponent
   }
-,
-{
-  path: 'rules',
-  component: RulesComponent
-}
-,
- 
+  ,
+  {
+    path: 'rules',
+    component: RulesComponent
+  }
+  ,
+
   {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'
   }
-,
+  ,
   {
     path: 'retour-menu',
     component: HomeComponent
   }
-,
+  ,
 
-  
- ];
- 
- 
+];
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,6 +79,3 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
- 

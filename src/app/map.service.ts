@@ -8,8 +8,8 @@ import { isNull, nullSafeIsEquivalent } from '@angular/compiler/src/output/outpu
 })
 export class MapService {
 
-  public cases : Tuile[][] = undefined
-  
+  public cases: Tuile[][] = undefined
+
 
   constructor() { }
 
@@ -24,5 +24,5 @@ export class MapService {
     this.cases[72][72] = startTile[0]
     return this.cases
   }
-  
+
 }

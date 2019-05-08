@@ -9,7 +9,7 @@ import { GameService } from '../game.service';
 export class HelpComponent implements OnInit {
 
   constructor(public game: GameService) { }
-  
+
   ngOnInit() {
   }
 

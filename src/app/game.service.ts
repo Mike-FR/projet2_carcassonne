@@ -26,7 +26,6 @@ export class GameService {
     this.tileSound.load()
     this.tileSound.play()
 
-    
     this.flipIt()
 
     if (this.totalTile <= 0) {
